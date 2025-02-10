@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Food - Recipe Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Food</h1>
+        <div class="mood-selector">
+            <h2>How are you feeling today?</h2>
+            <div class="mood-buttons">
+                <button class="mood-btn" data-mood="happy">😊 Happy</button>
+                <button class="mood-btn" data-mood="sad">😢 Sad</button>
+                <button class="mood-btn" data-mood="stressed">😰 Stressed</button>
+                <button class="mood-btn" data-mood="energetic">⚡ Energetic</button>
+                <button class="mood-btn" data-mood="tired">😴 Tired</button>
+            </div>
+        </div>
+        <div class="recipe-container" style="display: none;">
+            <h2>Here's what you should cook:</h2>
+            <div class="recipe-card">
+                <h3 id="recipe-title"></h3>
+                <img id="recipe-image" src="" alt="Recipe Image">
+                <div class="recipe-details">
+                    <h4>Ingredients:</h4>
+                    <ul id="recipe-ingredients"></ul>
+                    <h4>Instructions:</h4>
+                    <ol id="recipe-instructions"></ol>
+                </div>
+            </div>
+            <div class="button-group">
+                <button id="new-recipe-btn">Show me another recipe</button>
+                <button id="back-btn">Choose different mood</button>
+            </div>
+        </div>
+    </div>
+    <script src="recipes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
