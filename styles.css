@@ -107,4 +107,47 @@ h1 {
 
 #back-btn:hover {
     background-color: #555;
+}
+
+/* Add these mobile-specific rules at the end of your styles.css file */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .mood-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mood-btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .recipe-card {
+        padding: 15px;
+    }
+
+    #recipe-image {
+        max-height: 250px;
+    }
 } 
